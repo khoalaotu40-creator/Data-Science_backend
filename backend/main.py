@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 def main():
-    directory_path = r"D:\Thư mục sắp xếp kĩ luật\data"
+    directory_path = os.getenv("DOCUMENTS_DIRECTORY", "documents")
     documents = load_documents(directory_path)
     chunks = split_documents(documents, chunk_size=1000, chunk_overlap=200)
     vector_store = create_vector_store(chunks)
