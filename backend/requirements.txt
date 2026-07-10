@@ -1,0 +1,19 @@
+# Framework chính cho RAG
+langchain
+langchain-community
+
+# Kết nối với OpenAI (nếu dùng GPT)
+langchain-openai
+
+# Database Vector lưu trữ cục bộ
+chromadb
+faiss-cpu
+Chroma
+# Xử lý file PDF
+pypdf
+
+# Quản lý biến môi trường (như API Key)
+python-dotenv
+
+# Mô hình tạo Embedding mã nguồn mở (chạy offline)
+sentence-transformers
