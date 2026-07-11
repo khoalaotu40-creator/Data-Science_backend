@@ -1,0 +1,110 @@
+{
+  "document_id": "vn/luat/2026/100/qh15",
+  "identity_metadata": {
+    "document_number": "100/2026/QH15",
+    "title": "Luật Bảo vệ Dữ liệu Cá nhân",
+    "document_type": "Luật",
+    "issuer": "Quốc hội",
+    "promulgation_date": "2026-06-25"
+  },
+  "sources_provenance": {
+    "official_url": "https://vanban.chinhphu.vn/...",
+    "gazette_number": "123/2026",
+    "checksum": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "collected_at": "2026-07-11T15:00:00Z"
+  },
+  "expressions_versions": {
+    "version_type": "bản ban hành",
+    "language": "vi",
+    "effective_from": "2027-01-01",
+    "effective_to": null,
+    "system_recorded_at": "2026-07-11T15:00:00Z"
+  },
+  "structure_attachments": [
+    {
+      "node_id": "vn/luat/2026/100/qh15/preamble",
+      "node_type": "preamble",
+      "title": "Căn cứ ban hành",
+      "content": "Căn cứ Hiến pháp nước Cộng hòa xã hội chủ nghĩa Việt Nam; Quốc hội ban hành Luật Bảo vệ dữ liệu cá nhân.",
+      "children": []
+    },
+    {
+      "node_id": "vn/luat/2026/100/qh15/chuong_1",
+      "node_type": "chapter",
+      "title": "Chương I. Quy định chung",
+      "content": null,
+      "children": [
+        {
+          "node_id": "vn/luat/2026/100/qh15/dieu_1",
+          "node_type": "article",
+          "title": "Điều 1. Phạm vi điều chỉnh",
+          "content": "Luật này quy định về nguyên tắc, quyền, nghĩa vụ và trách nhiệm của cơ quan, tổ chức, cá nhân trong việc bảo vệ dữ liệu cá nhân.",
+          "children": []
+        },
+        {
+          "node_id": "vn/luat/2026/100/qh15/dieu_2",
+          "node_type": "article",
+          "title": "Điều 2. Đối tượng áp dụng",
+          "content": null,
+          "children": [
+            {
+              "node_id": "vn/luat/2026/100/qh15/dieu_2/khoan_1",
+              "node_type": "clause",
+              "title": "Khoản 1",
+              "content": "Cơ quan, tổ chức, cá nhân Việt Nam.",
+              "children": []
+            },
+            {
+              "node_id": "vn/luat/2026/100/qh15/dieu_2/khoan_2",
+              "node_type": "clause",
+              "title": "Khoản 2",
+              "content": "Cơ quan, tổ chức, cá nhân nước ngoài tại Việt Nam.",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legal_relations": [
+    {
+      "id": "rel-luat-100-based_on-hienphap",
+      "source": {
+        "document_id": "vn/luat/2026/100/qh15",
+        "provision_id": "vn/luat/2026/100/qh15/preamble"
+      },
+      "target": {
+        "document_id": "vn/hienphap/2013",
+        "provision_id": "vn/hienphap/2013"
+      },
+      "relation_type": "based_on",
+      "legal_effect": "Căn cứ pháp lý để ban hành",
+      "effective_from": "2027-01-01",
+      "effective_to": null,
+      "evidence": {
+        "text": "Căn cứ Hiến pháp nước Cộng hòa xã hội chủ nghĩa Việt Nam;",
+        "source_document_id": "vn/luat/2026/100/qh15",
+        "source_provision_id": "vn/luat/2026/100/qh15/preamble",
+        "official_source_url": "https://..."
+      },
+      "extraction": {
+        "method": "rule",
+        "model_or_rule_version": "relation-extractor-v2",
+        "confidence": 0.99,
+        "verification_status": "human_verified"
+      }
+    }
+  ],
+  "semantic_assertions": [
+    {
+      "assertion_id": "sem-luat-100-dieu-1-001",
+      "provision_id": "vn/luat/2026/100/qh15/dieu_1",
+      "type": "obligation",
+      "subject": "cơ quan, tổ chức, cá nhân",
+      "action": "bảo vệ dữ liệu cá nhân",
+      "conditions": "theo quy định của Luật này",
+      "exceptions": null,
+      "sanctions": null
+    }
+  ]
+}
