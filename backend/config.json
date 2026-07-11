@@ -1,0 +1,236 @@
+{
+  "metadata": {
+    "id": "",
+    "type": "",
+    "title": "",
+    "number": "",
+
+    "issuer": "",
+
+    "issued_date": "",
+    "effective_date": "",
+    "expired_date": null,
+
+    "status": "",
+
+    "language": "vi",
+    "field": "",
+    "version": 1,
+
+    "description": "",
+    "keywords": []
+  },
+
+  "relations": {
+    "amends": [],
+    "amended_by": [],
+
+    "implements": [],
+    "implemented_by": [],
+
+    "guides": [],
+    "guided_by": [],
+
+    "references": [],
+
+    "replaces": [],
+    "replaced_by": []
+  },
+
+  "semantic": {
+    "summary": "",
+    "topics": [],
+    "legal_terms": [],
+    "entities": []
+  },
+
+  "structure": {
+
+    "parts": [
+      {
+        "id": "",
+        "part_no": "",
+        "title": "",
+
+        "metadata": {
+          "level": "part",
+          "path": ""
+        },
+
+        "semantic": {
+          "summary": "",
+          "keywords": [],
+          "topics": [],
+          "entities": []
+        },
+
+        "chapters": [
+          {
+            "id": "",
+            "chapter_no": "",
+            "title": "",
+
+            "metadata": {
+              "level": "chapter",
+              "path": ""
+            },
+
+            "semantic": {
+              "summary": "",
+              "keywords": [],
+              "topics": [],
+              "entities": []
+            },
+
+            "sections": [
+              {
+                "id": "",
+                "section_no": "",
+                "title": "",
+
+                "metadata": {
+                  "level": "section",
+                  "path": ""
+                },
+
+                "semantic": {
+                  "summary": "",
+                  "keywords": [],
+                  "topics": [],
+                  "entities": []
+                },
+
+                "subsections": [
+                  {
+                    "id": "",
+                    "subsection_no": "",
+                    "title": "",
+
+                    "metadata": {
+                      "level": "subsection",
+                      "path": ""
+                    },
+
+                    "semantic": {
+                      "summary": "",
+                      "keywords": [],
+                      "topics": [],
+                      "entities": []
+                    },
+
+                    "articles": [
+                      {
+                        "id": "",
+                        "article_no": "",
+                        "title": "",
+
+                        "text": "",
+
+                        "metadata": {
+                          "level": "article",
+                          "path": ""
+                        },
+
+                        "semantic": {
+                          "summary": "",
+                          "keywords": [],
+                          "topics": [],
+                          "entities": []
+                        },
+
+                        "clauses": [
+                          {
+                            "id": "",
+                            "clause_no": "",
+
+                            "text": "",
+
+                            "metadata": {
+                              "level": "clause",
+                              "path": ""
+                            },
+
+                            "semantic": {
+                              "summary": "",
+                              "keywords": [],
+                              "topics": [],
+                              "entities": []
+                            },
+
+                            "points": [
+                              {
+                                "id": "",
+                                "point_no": "",
+
+                                "text": "",
+
+                                "metadata": {
+                                  "level": "point",
+                                  "path": ""
+                                },
+
+                                "semantic": {
+                                  "summary": "",
+                                  "keywords": [],
+                                  "topics": [],
+                                  "entities": []
+                                },
+
+                                "subpoints": [
+                                  {
+                                    "id": "",
+                                    "subpoint_no": "",
+
+                                    "text": "",
+
+                                    "metadata": {
+                                      "level": "subpoint",
+                                      "path": ""
+                                    },
+
+                                    "semantic": {
+                                      "summary": "",
+                                      "keywords": [],
+                                      "topics": [],
+                                      "entities": []
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+
+    "appendices": [
+      {
+        "id": "",
+        "appendix_no": "",
+        "title": "",
+
+        "text": "",
+
+        "metadata": {
+          "level": "appendix",
+          "path": ""
+        },
+
+        "semantic": {
+          "summary": "",
+          "keywords": [],
+          "topics": [],
+          "entities": []
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "metadata": {
+    "id": "27-2023-QH15",
+    "type": "Luật",
+    "title": "Luật Nhà ở",
+    "number": "27-2023-QH15",
+    "issuer": "Cơ quan ban hành",
+    "issued_date": "",
+    "effective_date": "",
+    "expired_date": null,
+    "status": "Có hiệu lực",
+    "language": "vi",
+    "field": "Demo",
+    "version": 1,
+    "description": "Dữ liệu mẫu",
+    "keywords": [
+      "demo"
+    ]
+  },
+  "relations": {
+    "amends": [],
+    "amended_by": [],
+    "implements": [],
+    "implemented_by": [
+      "100-2024-ND-CP"
+    ],
+    "guides": [],
+    "guided_by": [],
+    "references": [],
+    "replaces": [],
+    "replaced_by": []
+  },
+  "semantic": {
+    "summary": "Dữ liệu minh họa",
+    "topics": [
+      "demo"
+    ],
+    "legal_terms": [],
+    "entities": []
+  },
+  "structure": {
+    "parts": [
+      {
+        "id": "part1",
+        "part_no": "I",
+        "title": "Phần I",
+        "metadata": {
+          "level": "part",
+          "path": "Phần I"
+        },
+        "semantic": {
+          "summary": "",
+          "keywords": [],
+          "topics": [],
+          "entities": []
+        },
+        "chapters": [
+          {
+            "id": "ch1",
+            "chapter_no": "I",
+            "title": "Chương I",
+            "metadata": {
+              "level": "chapter",
+              "path": "Phần I > Chương I"
+            },
+            "semantic": {
+              "summary": "",
+              "keywords": [],
+              "topics": [],
+              "entities": []
+            },
+            "sections": [
+              {
+                "id": "sec1",
+                "section_no": "1",
+                "title": "Mục 1",
+                "metadata": {
+                  "level": "section",
+                  "path": "Phần I > Chương I > Mục 1"
+                },
+                "semantic": {
+                  "summary": "",
+                  "keywords": [],
+                  "topics": [],
+                  "entities": []
+                },
+                "subsections": [
+                  {
+                    "id": "sub1",
+                    "subsection_no": "1",
+                    "title": "Tiểu mục 1",
+                    "metadata": {
+                      "level": "subsection",
+                      "path": "Phần I > Chương I > Mục 1 > Tiểu mục 1"
+                    },
+                    "semantic": {
+                      "summary": "",
+                      "keywords": [],
+                      "topics": [],
+                      "entities": []
+                    },
+                    "articles": [
+                      {
+                        "id": "art1",
+                        "article_no": "1",
+                        "title": "Điều 1",
+                        "text": "Nội dung điều 1.",
+                        "metadata": {
+                          "level": "article",
+                          "path": "Phần I > Chương I > Mục 1 > Tiểu mục 1 > Điều 1"
+                        },
+                        "semantic": {
+                          "summary": "Điều 1",
+                          "keywords": [
+                            "điều"
+                          ],
+                          "topics": [
+                            "demo"
+                          ],
+                          "entities": []
+                        },
+                        "clauses": [
+                          {
+                            "id": "cl1",
+                            "clause_no": "1",
+                            "text": "Khoản 1.",
+                            "metadata": {
+                              "level": "clause",
+                              "path": "... > Khoản 1"
+                            },
+                            "semantic": {
+                              "summary": "",
+                              "keywords": [],
+                              "topics": [],
+                              "entities": []
+                            },
+                            "points": [
+                              {
+                                "id": "pta",
+                                "point_no": "a",
+                                "text": "Điểm a.",
+                                "metadata": {
+                                  "level": "point",
+                                  "path": "... > Điểm a"
+                                },
+                                "semantic": {
+                                  "summary": "",
+                                  "keywords": [],
+                                  "topics": [],
+                                  "entities": []
+                                },
+                                "subpoints": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "appendices": []
+  }
+}
