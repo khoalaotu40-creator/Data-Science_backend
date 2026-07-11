@@ -1,0 +1,6 @@
+{
+  "name": "LegalGraphRAG Analysis",
+  "description": "An interactive static site analyzing the architecture and benefits of the LegalGraphRAG system.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
