@@ -17,3 +17,7 @@ python-dotenv
 
 # Mô hình tạo Embedding mã nguồn mở (chạy offline)
 sentence-transformers
+
+
+marker-pdf
+subprocess
