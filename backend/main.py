@@ -2,12 +2,14 @@ import os
 from src.ingestion import DocumentLoader
 from src.chunking import process_file_and_chunk
 from src.vectordb.vector_store import create_vector_store
+from src.graph_construct import get_graph_data_from_llm, KnowledgeGraphBuilder
 from dotenv import load_dotenv
 load_dotenv()
 
 #Biến 
 raw_data_path = "./raw_data"
 output_md_paths = "./src/ingestion/output_md_paths"
+output_graph_path = "output_folder"
 
 def main():
     # 1. Khởi tạo loader và lấy danh sách file đã convert xong
@@ -43,7 +45,20 @@ def main():
         
     
     print(f"\n--- Hoàn tất! Tổng cộng {len(all_chunks)} chunks được tạo ---")
-    
-     
+    print("\n--- Bắt đầu Xây dựng Knowledge Graph (GraphRAG) ---")
+    knowledge_Graph_builder = KnowledgeGraphBuilder()
+
+    for i, chunk in enumerate(all_chunks):
+        print(f"Đang trích xuất Graph từ Chunk {i+1}/{len(all_chunks)}...")
+        chunk_text = chunk['text']
+        # 1. Gọi LLM để lấy Nodes và Edges
+        extracted_data = get_graph_data_from_llm(chunk_text)
+        # 2. Đưa dữ liệu vào NetworkX Graph
+        if extracted_data:
+            knowledge_Graph_builder.add_data(extracted_data)
+        
+    # 3. Lưu Graph ra file
+    print("\n--- Hoàn tất trích xuất, tiến hành lưu Graph ---")
+    knowledge_Graph_builder.save_graph(output_graph_path)
 if __name__ == "__main__":
     main()
