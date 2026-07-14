@@ -11,10 +11,14 @@
             "id": "a6ff01e74cd6a455",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Kiến giải.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Tab mới"
+              "title": "Kiến giải"
             }
           }
         ]
@@ -178,6 +182,7 @@
   },
   "active": "a6ff01e74cd6a455",
   "lastOpenFiles": [
+    "Kiến giải.md",
     "qh15_chunk_1.md",
     "qh15_chunk_2.md",
     "qh15_chunk_3.md",
