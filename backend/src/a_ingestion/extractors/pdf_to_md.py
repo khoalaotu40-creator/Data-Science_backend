@@ -1,9 +1,13 @@
 import pymupdf4llm
+from pathlib import Path
 
-def extract_pdf(pdf_path, output_dir)-> str:
+def extract_pdf(pdf_path, output_dir_name: str = "output_md_paths")-> str:
     """
     Chuyển đổi PDF sang MD, lưu trữ (cache) vào output_dir và trả về nội dung text.
     """
+    ingestion_dir = Path(__file__).resolve().parent.parent
+    output_dir = ingestion_dir / output_dir_name
+    output_dir.mkdir(parents=True, exist_ok=True)
     md_filename = pdf_path.stem + ".md"
     md_file_path = output_dir / md_filename
 
