@@ -7,14 +7,14 @@ from dotenv import load_dotenv
 load_dotenv()
 
 #Biến 
-raw_data_pdf_path = "./raw_data/pdf"
-output_md_paths = "./data/extracted/text"
+raw_data_path = "./raw_data"
+output_md_paths = "./src/ingestion/output_md_paths"
 output_graph_path = "output_folder"
 
 def main():
     # 1. Khởi tạo loader và lấy danh sách file đã convert xong
-    print(f"--- Bắt đầu load dữ liệu từ: {raw_data_pdf_path} ---")
-    loader = DocumentLoader(raw_data_pdf_path, output_md_paths) # List
+    print(f"--- Bắt đầu load dữ liệu từ: {raw_data_path} ---")
+    loader = DocumentLoader(raw_data_path, output_md_paths) # List
     md_file_paths = loader.load_all()
     print(f"Đã tạo thành công {len(md_file_paths)} file .md trong {output_md_paths}")
 
