@@ -1,25 +1,21 @@
 import os
-from langchain_community.document_loaders import TextLoader, DirectoryLoader
-import json
+from pathlib import Path
+from .pdf_to_md import convert_pdf_to_md
 
-def load_json_documents(directory_path):
-    """
-    Tải tất cả các tài liệu JSON từ thư mục chỉ định và chuyển đổi chúng thành định dạng Document của LangChain.
-    """
-    if not os.path.exists(directory_path):
-        raise FileNotFoundError(f"Địa chỉ không tồn tại: {directory_path}. Vui lòng kiểm tra lại đường dẫn.")
+class DocumentLoader:
+    def __init__(self, raw_data_path: str, output_md_path: str):
+        self.raw_data_path = Path(raw_data_path) # vị trí thư mục raw_Data
+        self.output_md_path = Path(output_md_path) # vị trí thư mục các file md được tạo ra từ pdf
+        self.output_md_path.mkdir(parents=True, exist_ok=True)
     
+    def _run_conversion(self, pdf_path): # Đổi tên thành _run_conversion
+        return convert_pdf_to_md(pdf_path, self.output_md_path)
     
-    documents = []
-    # Duyệt qua tất cả các file trong thư mục
-    for filename in os.listdir(directory_path):
-        if filename.endswith(".json"):
-            file_path = os.path.join(directory_path, filename)
-            with open(file_path, 'r', encoding='utf-8') as f:
-                json_data = json.load(f)
-                documents.append(json_data)
-                
-
-    if len(documents) == 0:
-        raise FileNotFoundError(f"Không tìm thấy tài liệu JSON nào trong thư mục: {directory_path}. Vui lòng kiểm tra lại nội dung thư mục.")
-    return documents
+    def load_all(self):
+        """Quét toàn bộ thư mục raw_data và trả về danh sách path file .md"""
+        md_files = []
+        for raw_data_file in self.raw_data_path.glob("*.pdf"):
+            md_path = self._run_conversion(raw_data_file)
+            md_files.append(md_path)
+        return md_files
+    
