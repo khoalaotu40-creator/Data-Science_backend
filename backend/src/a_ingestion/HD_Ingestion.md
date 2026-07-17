@@ -1,4 +1,5 @@
 1_ingestion/       
+│   ├── output_dir   (file md sau khi extract sẽ được lưu ở đây để được tái sử dụng)
 │   ├── fetcher      (Tải web/file)
 |   │   ├── pdf_path.py      
 │   ├── extractors   (PDF/Word -> Text markdown)
