@@ -1,16 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
-<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
-  <key id="d1" for="edge" attr.name="relation" attr.type="string" />
-  <key id="d0" for="node" attr.name="label" attr.type="string" />
-  <graph edgedefault="directed">
-    <node id="Điều 10">
-      <data key="d0">Điều_Luật</data>
-    </node>
-    <node id="Người sử dụng đất">
-      <data key="d0">Chủ_Thể</data>
-    </node>
-    <edge source="Điều 10" target="Người sử dụng đất">
-      <data key="d1">quy_định_quyền_của</data>
-    </edge>
-  </graph>
-</graphml>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d1" for="edge" attr.name="relation" attr.type="string"/>
+<key id="d0" for="node" attr.name="label" attr.type="string"/>
+<graph edgedefault="directed"><node id="Điều 10">
+  <data key="d0">Điều_Luật</data>
+</node>
+<node id="Người sử dụng đất">
+  <data key="d0">Chủ_Thể</data>
+</node>
+<edge source="Điều 10" target="Người sử dụng đất">
+  <data key="d1">quy_định_quyền_của</data>
+</edge>
+</graph></graphml>
