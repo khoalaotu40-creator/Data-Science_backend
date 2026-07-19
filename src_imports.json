@@ -1,0 +1,216 @@
+{
+  "direction": "TB",
+  "nodes": [
+    {
+      "id": "api",
+      "label": "api"
+    },
+    {
+      "id": "a_ingestion.ingestion",
+      "label": "a_ingestion.ingestion",
+      "group": "a_ingestion"
+    },
+    {
+      "id": "a_ingestion",
+      "label": "a_ingestion"
+    },
+    {
+      "id": "a_ingestion.extractors.pdf_to_md",
+      "label": "a_ingestion.extractors.pdf_to_md",
+      "group": "a_ingestion/extractors"
+    },
+    {
+      "id": "a_ingestion.fetcher.pdf_path",
+      "label": "a_ingestion.fetcher.pdf_path",
+      "group": "a_ingestion/fetcher"
+    },
+    {
+      "id": "a_ingestion.parser.md_parser",
+      "label": "a_ingestion.parser.md_parser",
+      "group": "a_ingestion/parser"
+    },
+    {
+      "id": "a_ingestion.parser.relations",
+      "label": "a_ingestion.parser.relations",
+      "group": "a_ingestion/parser"
+    },
+    {
+      "id": "a_ingestion.parser.rules",
+      "label": "a_ingestion.parser.rules",
+      "group": "a_ingestion/parser"
+    },
+    {
+      "id": "a_ingestion.parser.schema",
+      "label": "a_ingestion.parser.schema",
+      "group": "a_ingestion/parser"
+    },
+    {
+      "id": "a_ingestion.parser.tree_builder",
+      "label": "a_ingestion.parser.tree_builder",
+      "group": "a_ingestion/parser"
+    },
+    {
+      "id": "chunking.chunker",
+      "label": "chunking.chunker",
+      "group": "chunking"
+    },
+    {
+      "id": "chunking.legal_structure",
+      "label": "chunking.legal_structure",
+      "group": "chunking"
+    },
+    {
+      "id": "chunking",
+      "label": "chunking"
+    },
+    {
+      "id": "embeddings.embedder",
+      "label": "embeddings.embedder",
+      "group": "embeddings"
+    },
+    {
+      "id": "embeddings",
+      "label": "embeddings"
+    },
+    {
+      "id": "graph_construct.buildGraph",
+      "label": "graph_construct.buildGraph",
+      "group": "graph_construct"
+    },
+    {
+      "id": "graph_construct.extractor",
+      "label": "graph_construct.extractor",
+      "group": "graph_construct"
+    },
+    {
+      "id": "graph_construct.schema",
+      "label": "graph_construct.schema",
+      "group": "graph_construct"
+    },
+    {
+      "id": "graph_construct",
+      "label": "graph_construct"
+    },
+    {
+      "id": "llm.llm_client",
+      "label": "llm.llm_client",
+      "group": "llm"
+    },
+    {
+      "id": "llm",
+      "label": "llm"
+    },
+    {
+      "id": "prompts.prompt_templates",
+      "label": "prompts.prompt_templates",
+      "group": "prompts"
+    },
+    {
+      "id": "prompts",
+      "label": "prompts"
+    },
+    {
+      "id": "retrieval.retriever",
+      "label": "retrieval.retriever",
+      "group": "retrieval"
+    },
+    {
+      "id": "retrieval",
+      "label": "retrieval"
+    },
+    {
+      "id": "utils.configs",
+      "label": "utils.configs",
+      "group": "utils"
+    },
+    {
+      "id": "utils.utils",
+      "label": "utils.utils",
+      "group": "utils"
+    },
+    {
+      "id": "utils",
+      "label": "utils"
+    },
+    {
+      "id": "vectordb.store",
+      "label": "vectordb.store",
+      "group": "vectordb"
+    },
+    {
+      "id": "vectordb.vector_store",
+      "label": "vectordb.vector_store",
+      "group": "vectordb"
+    },
+    {
+      "id": "vectordb",
+      "label": "vectordb"
+    }
+  ],
+  "edges": [
+    {
+      "source": "a_ingestion",
+      "target": "a_ingestion.ingestion"
+    },
+    {
+      "source": "a_ingestion.ingestion",
+      "target": "a_ingestion.extractors.pdf_to_md"
+    },
+    {
+      "source": "a_ingestion.ingestion",
+      "target": "a_ingestion.fetcher.pdf_path"
+    },
+    {
+      "source": "a_ingestion.ingestion",
+      "target": "a_ingestion.parser.md_parser"
+    },
+    {
+      "source": "a_ingestion.parser.md_parser",
+      "target": "a_ingestion.parser.relations"
+    },
+    {
+      "source": "a_ingestion.parser.md_parser",
+      "target": "a_ingestion.parser.schema"
+    },
+    {
+      "source": "a_ingestion.parser.md_parser",
+      "target": "a_ingestion.parser.tree_builder"
+    },
+    {
+      "source": "a_ingestion.parser.tree_builder",
+      "target": "a_ingestion.parser.rules"
+    },
+    {
+      "source": "a_ingestion.parser.tree_builder",
+      "target": "a_ingestion.parser.schema"
+    },
+    {
+      "source": "chunking",
+      "target": "chunking.chunker"
+    },
+    {
+      "source": "chunking",
+      "target": "chunking.legal_structure"
+    },
+    {
+      "source": "chunking.chunker",
+      "target": "chunking.legal_structure"
+    },
+    {
+      "source": "graph_construct",
+      "target": "graph_construct.buildGraph"
+    },
+    {
+      "source": "graph_construct",
+      "target": "graph_construct.extractor"
+    },
+    {
+      "source": "graph_construct",
+      "target": "graph_construct.schema"
+    },
+    {
+      "source": "utils.configs",
+      "target": "utils.utils"
+    }
+  ]
+}
