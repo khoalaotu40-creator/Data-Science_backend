@@ -50,8 +50,15 @@ def main():
             logger.error(f"❌ Thư mục đầu vào không tồn tại: {RAW_DATA_PATH}")
             return
             
+
+            
         # Quét và lọc ra danh sách toàn bộ các file .pdf trong thư mục
         pdf_files = [f for f in RAW_DATA_PATH.glob("*") if f.suffix.lower() == ".pdf"]
+
+
+
+
+
         logger.info(f"📁 Tìm thấy {len(pdf_files)} file PDF cần xử lý.")
 
         if not pdf_files:

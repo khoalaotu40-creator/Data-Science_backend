@@ -48,8 +48,8 @@ def parse_structure(text: str, doc_id: str, title: str) -> dict[str, Any]:
     def close_current(end_char_index: int) -> None:
         current["source_span"]["end_char"] = end_char_index
         # Cắt lấy đoạn text thuộc về Node này
-        current["text"] = normalize_space(text[current_start:end_char_index])
-        current["clean_text"] = current["text"]
+        current["text"] = text[current_start:end_char_index]
+        current["clean_text"] = normalize_space(text[current_start:end_char_index])
 
     # 2. Duyệt qua từng dòng văn bản
     for line in lines:
@@ -87,15 +87,15 @@ def parse_structure(text: str, doc_id: str, title: str) -> dict[str, Any]:
 
 # 3. Kết thúc văn bản: Đóng Node cuối cùng lại
     current["source_span"]["end_char"] = len(text)
-    current["text"] = normalize_space(text[current_start:])
-    current["clean_text"] = current["text"]
+    current["text"] = text[current_start:]
+    current["clean_text"] = normalize_space(text[current_start:])
     
     # Quét dọn Node gốc: Nếu Node gốc không bắt được chữ nào ở đoạn đầu (vì tiêu đề xuất hiện ngay dòng 1)
     # thì copy 2000 ký tự đầu tiên để làm text tóm tắt.
-    if not root.get("text"):
-        root["text"] = normalize_space(text[: min(len(text), 2000)])
-        root["clean_text"] = root["text"]
-        root["source_span"]["end_char"] = len(text)
+    # if not root.get("text"):
+    #     root["text"] = normalize_space(text[: min(len(text), 2000)])
+    #     root["clean_text"] = root["text"]
+    #     root["source_span"]["end_char"] = len(text)
         
     # Gắn đường dẫn Breadcrumb cho toàn bộ cây
     assign_paths(root)

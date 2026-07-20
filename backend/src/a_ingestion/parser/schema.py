@@ -1,7 +1,15 @@
 from typing import Any
-from src.utils.utils import sha256_text, slugify, utc_now
+from src.utils.utils import sha256_text, slugify, utc_now, normalize_space
 
-def make_node(doc_id: str, level: str, number: str, title: str, parent_id: str | None, start: int) -> dict[str, Any]:
+def make_node(
+        doc_id: str, 
+        level: str, 
+        number: str, 
+        title: str, 
+        
+        parent_id: str | None, 
+        start: int
+    ) -> dict[str, Any]:
     # 1. Tạo hậu tố (suffix) cho node_id dựa trên số hiệu hoặc tiêu đề
     suffix = number or slugify(title)[:20] or sha256_text(title)[:8]
     
@@ -9,6 +17,8 @@ def make_node(doc_id: str, level: str, number: str, title: str, parent_id: str |
         suffix = f"{suffix}-{sha256_text(parent_id)[:8]}-{start}"
     
     node_id = f"{doc_id}:{level}:{slugify(suffix)}"
+    
+    
     
     return {
         "id": node_id,
